@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="">
-	<head>
+<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +15,6 @@
 		<![endif]-->
 	</head>
 	<body>
-
 		<style>
 			body{
 				background-color:#99ccff;
@@ -44,7 +41,10 @@
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="http://localhost:8080/ci3//home">Home</a></li>
 								<li><a href="http://localhost:8080/ci3//about">About</a></li>
-								<li><a href="http://localhost:8080/ci3//blog">Blog</a></li>
+							<li><a href="http://localhost:8080/ci3//blog">Blog</a></li>
+								
+							</ul>
+
 							</ul>
 					
 							
@@ -52,31 +52,43 @@
 					</div>
 				</nav>
 				<div class="jumbotron">
-				<div class="col-md-4 col-sm-6 portofolio-item"> 
-				<img class="mx-auto rounded-circle"  src="http://localhost:8080/ci3/assets/image/portofolio/profil.jpg"
-				width="100%" height="60%" alt="">
-				</div>
 					<div class="container">
-						<h1>My Profile</h1>
-						<p>Nama 			: Fadila Setyabudi </p>
-						<p>Tempat Tgl Lahir : Malang 01 Agustus 1998</p>
-						<p>Alamat			: Kepanjen Malang </p>
-						<p>Jurusan			: Informatika </p>
-						<p>Prodi			: D3 Management Informatika </p>
+						<h1>Mata Kuliah Informatika</h1>
+						<p>Semester 1</p>
+						<p>1. Pancasila</p>
+						<p>2. K3</p>
+						<p>3. MTK Informatika</p>
+						<p>4. Pengantar TI</p>
+						<p>5. Dasar Internet dan Web</p>
+						<p>6. Algoritma</p>
+						<p>7. Aplikasi Komputer</p>
+						<p></p>
+						<p>Semester 2</p>
+						<p>1. OOP</p>
+						<p>2. Basis Data</p>
+						<p>3. Bahasa Inggris </p>
 
-
+						<h1>Galery Informatika 1F</h1>
+						<div class="col-md-4 col-sm-6 portofolio-item"> 
+				<img class="mx-auto rounded-circle"  src="http://localhost:8080/ci3/assets/image/portofolio/1.jpg"
+				width="80%" height="50%" alt="">
+				</div>
+				<div class="col-md-4 col-sm-6 portofolio-item"> 
+				<img class="mx-auto rounded-circle"  src="http://localhost:8080/ci3/assets/image/portofolio/2.jpg"
+				width="100%" height="50%" alt="">
+				</div>
+				<p>
+				<div class="col-md-4 col-sm-6 portofolio-item"> 
+				<img class="mx-auto rounded-circle"  src="http://localhost:8080/ci3/assets/image/portofolio/3.jpg"
+				width="120%" height="50%" alt="">
+				</div>
+				</p>
 						
+							
 
 					</div>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6">
-					<img class="mx-auto rounded-circle"  src="http://localhost:8080/ci3/assets/image/portofolio/fb.jpg"
-				width="10%" height="10%" alt="">
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6">
-					<img class="mx-auto rounded-circle"  src="http://localhost:8080/ci3/assets/image/portofolio/ig.png"
-				width="10%" height="10%" alt="">
-				</div>
+				
 
 			 </div>
 				

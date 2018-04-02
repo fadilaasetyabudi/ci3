@@ -17,6 +17,11 @@
 		<![endif]-->
 	</head>
 	<body>
+		<style>
+			body{
+				background-color:#99ccff;
+			}
+		</style>
 		<!--<h1 class="text-center"> "Hello World" </h1>-->
 		<div class="container">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -37,7 +42,8 @@
 						<div class="collapse navbar-collapse navbar-ex1-collapse">
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="<?php echo site_url() ?>/home">Home</a></li>
-								<li><a href="<?php echo site_url() ?>/about">About</a></li>
+								<li><a href="http://localhost:8080/ci3//about">About</a></li>
+								<li><a href="http://localhost:8080/ci3//blog">Blog</a></li>
 								
 							</ul>
 					
@@ -47,22 +53,18 @@
 				</nav>
 				<div class="jumbotron">
 					<div class="container">
-						<h1>hello, world</h1>
-						<p>contents...</p>
+						<h1>hello, welocome to my website</h1>
+						<p>hai hai disini aku akan sedikit berbagi tentang kehidupan Mahasiswa POLINEMA Informatika </p>
 						<p>
 							<a class="btn btn-primary btn-lg">Learn more</a>
 						</p>
 
 					</div>
 				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6">
-					hello hello...
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6">
-					wolrd world.....
-				</div>
+				
 
 			 </div>
+				
 				
 			
 		</div>
