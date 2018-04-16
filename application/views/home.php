@@ -145,7 +145,7 @@
               <h3 class="mb-3">Pemrograman</h3>
               <p class="text-muted mb-0"></p>
                <a href="<?php echo site_url('home/tambah'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">insert</a>
-                <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Delete</a>
+                <a href="<?php echo site_url('home/edit'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Delete</a>
                  <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Update</a>
             </div>
             </a>
