@@ -61,14 +61,20 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
+            <br>
+            <br>
+            <br>
               <strong>Welcome To My Blog</strong>
             </h1>
             <hr>
           </div>
+        
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5">hallo selamat datang di blog saya, disini saya akan sedikit bercerita tentang suka duka menjadi mahasiswa informatika di polinema :) </p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+            <!--<a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>-->
+             <a class="btn btn-light btn-xl js-scroll-trigger" href="#about">Find Out More</a>
           </div>
+
         </div>
       </div>
     </header>
@@ -103,17 +109,55 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 text-center">
+
+
+
+
+<!--<?php foreach ($artikel as $key): ?> 
+               
+
+            
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
+                        <div class="tm-content-box">
+                             <h3 class="tm-margin-b-20 tm-gold-text"> <?php echo $key->judul ?></h3>
+                                <a href="<?php echo base_url(). 'home/detail/'. $key->id ?>"  style="color: black;">
+                                    <img src="<?php echo base_url (). 'Upload/'. $key->image?>" alt="Image" class="tm-margin-b-30 img-fluid"   width="250" height="250">
+                                        <br>
+                                       <!-- <p class="tm-ma rgin-b-20"><?php echo $key->ctn ?></p> -->
+                                        <!--<a href="<?php echo base_url(). 'home/detail/'. $key->id ?>" class="tm-btn text-uppercase">Read More</a>    
+                                        <br> 
+                                        <br>    
+                <a href="<?php echo site_url('home/Form_Edit/'. $key->id); ?>" class="btn btn-sm btn-danger">edit</a>
+                <!--<a href='blog/edit/<?php echo $key->id ?>' class='btn btn-sm btn-danger'>edit</a> -->
+                <!--<a href="<?php echo base_url(). 'home/delete/' . $key->id ?>" class="btn btn-sm btn-danger">Hapus</a>
+
+                         </div>
+                     </div>    
+               <?php endforeach ?> -->
+
+
+
+
+
+            <a href="<?php echo site_url().'Home/detail/1'?>">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Pemrograman</h3>
               <p class="text-muted mb-0"></p>
+               <a href="<?php echo site_url('home/tambah'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">insert</a>
+                <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Delete</a>
+                 <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Update</a>
             </div>
+            </a>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Web</h3>
               <p class="text-muted mb-0"></p>
+               <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">insert</a>
+                <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Delete</a>
+                 <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Update</a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
@@ -121,6 +165,9 @@
               <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Basisdata</h3>
               <p class="text-muted mb-0"></p>
+               <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">insert</a>
+                <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Delete</a>
+                 <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Update</a>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
@@ -128,6 +175,9 @@
               <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Jaringan</h3>
               <p class="text-muted mb-0"></p>
+               <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">insert</a>
+                <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Delete</a>
+                 <a href="<?php echo site_url('home'); ?>" class="btn btn-light btn-xl js-scroll-trigger ">Update</a>
             </div>
           </div>
         </div>
