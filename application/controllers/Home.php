@@ -41,7 +41,19 @@ class Home extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->model('artikel');
 		$data = array();
-		$this->load->view('tambah', $data);
+
+		$this->load->helper('form');
+	    $this->load->library('form_validation');
+	    $this->form_validation->set_rules('input_judul', 'title', 'required');
+	    $this->form_validation->set_rules('input_content', 'content', 'required');
+	    $this->form_validation->set_rules('input_gambar', 'gambar', 'required');
+
+	    if ($this->form_validation->run() == FALSE)
+	    {
+	        $this->load->view('tambah');
+
+	    } else {
+	
 
 		if ($this->input->post('simpan')) 
 		{
@@ -56,18 +68,11 @@ class Home extends CI_Controller {
 				$data['message'] = $upload['error'];
 			}
 		}
+			$this->load->view('tambah', $data);
+		}
 			
 	}
 
-		public function edit($a) {
-		$this->load->model('artikel');
-		$data['a'] = $this->artikel->get_single($a);
-		if ($this->input->post('update')) {
-			$upload=$this->artikel->upload();
-			$this->artikel->edit($upload, $id);
-		}
-		$this->load->view('update', $data);
-	}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		public function Form_Edit($a)
@@ -85,7 +90,18 @@ class Home extends CI_Controller {
 
 	public function update($a)
 	{
+		$this->load->helper('form');
+	    $this->load->library('form_validation');
+	    $this->form_validation->set_rules('input_judul', 'title', 'required');
+	    $this->form_validation->set_rules('input_content', 'content', 'required');
+	    $this->form_validation->set_rules('input_gambar', 'gambar', 'required');
 
+	    if ($this->form_validation->run() == FALSE)
+	    {
+	        $this->load->view('edit');
+
+	    } else { 
+ 
 	$judul= $_POST['judul'];
 	$content = $_POST['content'];
 	$image = $_POST['image'];
@@ -100,6 +116,8 @@ class Home extends CI_Controller {
  	}else{
  		echo 'Gagal disimpan';
  	}
+ }
+ 	
 }
 
 }

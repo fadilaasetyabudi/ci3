@@ -28,11 +28,17 @@
   </head>
 
   <body id="page-top">
+   <!--echo form_open_multipart('home/tambah'); -->
   <?php
-        echo form_open_multipart('home/tambah'); 
+       
+          
+        echo form_open_multipart('home/tambah', array('class' => 'needs-validation', 'novalidate' => ''));
        ?>
+
+      
           
 <form>
+<?php echo validation_errors(); ?>
   <div class="form-group">
     <label for="exampleFormControlInput1">Judul</label>
     <input type="text" class="form-control" name="input_judul" value="<?php echo set_value('input_judul'); ?>"  placeholder="judul">
@@ -41,12 +47,12 @@
 
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Content</label>
-    <textarea class="form-control" name="input_content" rows="3"></textarea>
+    <textarea class="form-control"  value="<?php echo set_value('input_content'); ?>" name="input_content" rows="3"></textarea>
   </div>
 
   <div class="form-group">
     <label for="exampleFormControlInput1">Image</label>
-    <input type="file" class="form-control" name="input_gambar" placeholder="image">
+    <input type="file" class="form-control" value="<?php echo set_value('input_gambar'); ?>" name="input_gambar" placeholder="image">
   </div>
    <button type="submit" name="simpan" value="simpan" class="tm-btn">Simpan</button>  
     <button><a href="<?php echo site_url('home'); ?>" class="tm-btn ">Back</a></button>

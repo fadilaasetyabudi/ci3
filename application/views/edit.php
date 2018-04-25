@@ -45,10 +45,10 @@
                 ?> 
                 <section>
                             <h3 class="tm-gold-text tm-form-title">Edit Data</h3>
-                            
+                            <?php echo site_url('home/update/'.$a) ?>
 
 
-                <form action="<?php echo site_url('home/update/'.$a) ?>" method="POST" class="tm-contact-form">
+                <form action="" method="POST" class="tm-contact-form">
                                                             
 
                                 <div class="form-group">
