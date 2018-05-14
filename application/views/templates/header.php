@@ -12,8 +12,7 @@
 
     <!-- Bootstrap core CSS -->
    <link rel="stylesheet" href="<?php echo base_url('assets/vendor/bootstrap/css/bootstrap.min.css')?>">
-    
-   
+   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
     <!-- Custom fonts for this template -->
     <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -24,10 +23,10 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="<?php echo base_url('assets/css/creative.min.css')?>">
+      <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/custom.css">
 
   </head>
-
-  <body id="page-top">
+   <body id="page-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -52,10 +51,10 @@
              <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#kategori">Kategori</a>
             </li>
-             </li>
              <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#datatables">Data Tables</a>
             </li>
+            
          
           </ul>
         </div>
@@ -84,67 +83,4 @@
         </div>
       </div>
     </header>
-
-    <section class="bg-primary" id="kategori">
- <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Artikel Pemrograman</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4"> 
-            <p>PHP</p></p>
-          </div>
-        </div>
-      </div>
-
-
-
-    <?php if( !empty($categories) ) : ?>
-            <div class="container-fluid">
-                <a href="<?php echo site_url('kategori/tambah/'); ?>" class="tm-btn text-uppercase">Tambah artikel</a>
-                <br>
-                <br>
-                <br>
-                
-                <div class="row"> 
-
-                    <?php
-                       
-                        foreach ($categories as $key) :
-                    ?>
-               
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"> 
-                        <div class="tm-content-box">
-                             <h3 class="tm-margin-b-20 tm-gold-text"> <?php echo $key->cat_name ?></h3>
-                                
-                                   
-                                       
-                <a href="<?php echo base_url('kategori/artikel/'.$key->cat_id) ?>" class="btn btn-success">Lihat Artikel</a>    
-                                        <br> 
-                                        <br>    
-                <a href="<?php echo base_url(). 'kategori/edit/' . $key->cat_id ?>" class="btn btn-sm btn-danger">edit</a>
-                <!--<a href='blog/edit/<?php echo $key->id ?>' class='btn btn-sm btn-danger'>edit</a> -->
-                <a href="<?php echo base_url(). 'kategori/delete/' . $key->cat_id ?>" class="btn btn-sm btn-danger">Hapus</a>
-
-                         </div>
-                     </div>    
-               <?php endforeach ?> 
-
-      <!-- Bootstrap core JavaScript -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="assets/scrollreveal/scrollreveal.min.js"></script>
-    <script src="assets/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="assets/js/creative.min.js"></script>
-
-  </body>
-
-</html>
-
-
-
+  </html>

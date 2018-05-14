@@ -8,17 +8,35 @@ class Artikel extends CI_Model {
     	parent::__construct();
     }
 
-	public function get_all_artikel(){
-        $this->db->join('categories', 'categories.cat_id = blog.jenis_cat');
+	public function get_all_artikel($limit = FALSE, $offset = FALSE)
+    {
+          if ( $limit ) {
+            $this->db->limit($limit, $offset);
+        }
+        // Query Manual
+        // $query = $this->db->query('
+        //      SELECT * FROM blogs
+        //  ');
+
+        // Memakai Query Builder
+        // Urutkan berdasar tanggal
+        $this->db->order_by('blog.id', 'DESC');
+
+        // $this->db->join('categories', 'categories.cat_id = blog.jenis_cat');
 		$query = $this->db->get('blog');
 		return $query->result();
 	}	
 
-	public function get_single($id)
-	{
-		$query = $this->db->query('select * from blog where id='.$id);
-		return $query->result();
-	}
+	// public function get_single($id)
+	// {
+	// 	$query = $this->db->query('select * from blog where id='.$id);
+	// 	return $query->result();
+	// }
+     public function get_total() 
+    {
+        // Dapatkan jumlah total artikel
+        return $this->db->count_all("blog");
+    }
 
 	public function get_artikel_by_id($id)
     {
