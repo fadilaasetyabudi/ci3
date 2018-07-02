@@ -58,6 +58,37 @@
          
           </ul>
         </div>
+
+         <?php if($this->session->userdata('logged_in') && $this->session->userdata('level') == 1) : ?>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="<?php echo site_url('Datatable/datatables_view')?>">Data User <span class="sr-only"></span></a>
+      </li>
+      <?php endif; ?>
+    </ul>
+
+    <?php if(!$this->session->userdata('logged_in')) : ?>
+      <div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="btn btn-outline-danger" href="<?php echo site_url('uer/register')?>">Register <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="btn btn-outline-success" href="<?php echo site_url('user/login')?>">Login <span class="sr-only"></span></a>
+        </li>
+      </ul>
+      </div>
+    <?php endif; ?>
+
+    <?php if($this->session->userdata('logged_in')) : ?>
+      <div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="btn btn-outline-danger" href="<?php echo site_url('user/logout')?>">Logout <span class="sr-only"></span></a>
+        </li>
+      </ul>
+      </div>
+    <?php endif; ?>
       </div>
     </nav>
     
